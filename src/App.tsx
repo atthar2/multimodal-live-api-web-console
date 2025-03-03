@@ -22,7 +22,10 @@ import { Altair } from "./components/altair/Altair";
 import ControlTray from "./components/control-tray/ControlTray";
 import cn from "classnames";
 
-const API_KEY = process.env.REACT_APP_GEMINI_API_KEY as string;
+// const API_KEY = process.env.REACT_APP_GEMINI_API_KEY as string;
+const API_KEY = "AIzaSyAlrQ2uB9lad43V0qs9urwfT7rY41e4LhA" as string;
+console.log("key is", API_KEY);
+
 if (typeof API_KEY !== "string") {
   throw new Error("set REACT_APP_GEMINI_API_KEY in .env");
 }
